@@ -729,7 +729,7 @@
   </div>
 </div>
 <script>
-// TOC click handling + active state tracking
+// TOC active state tracking only — clicks use native anchor behavior
 (function() {
   var links = document.querySelectorAll('.ti-toc a');
   var sections = [];
@@ -737,12 +737,6 @@
     var id = link.getAttribute('href').slice(1);
     var el = document.getElementById(id);
     if (el) sections.push({ id: id, el: el, link: link });
-    // Direct scroll on click — bypasses Webflow anchor handling
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      var target = document.getElementById(id);
-      if (target) window.scrollTo(0, target.offsetTop - 20);
-    });
   });
   function update() {
     var scrollY = window.scrollY || window.pageYOffset;
