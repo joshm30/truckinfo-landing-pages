@@ -80,7 +80,8 @@
   </div>
   <p class="ti-companies-disclaimer">By clicking "Get Quote" or calling you will be connected with one of our insurance partners. The providers above may not be one of the providers in their network at this time.</p>
 
-  <div id="main-content">
+  <div class="ti-layout">
+  <main class="ti-main" id="main-content">
 
       <!-- ==================== BOX TRUCK INSURANCE COST ==================== -->
       <section class="ti-section" id="Box-Truck-Insurance-Cost">
@@ -693,7 +694,27 @@
       </section>
 
 
-  </div><!-- #main-content -->
+  </main>
+
+  <aside class="ti-sidebar">
+    <nav class="ti-toc" aria-label="Table of contents">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#Box-Truck-Insurance-Cost">Box Truck Insurance Cost</a></li>
+        <li><a href="#26-Foot-Box-Truck-Actually-Costs">What a 26-Foot Box Truck Actually Costs to Insure</a></li>
+        <li><a href="#The-Down-Payment">The Down Payment</a></li>
+        <li><a href="#Four-Insurance-Stacks">Four Insurance Stacks</a></li>
+        <li><a href="#The-Box-Truck-Advantage">The Box Truck Advantage</a></li>
+        <li><a href="#Who-Actually-Writes-Box-Truck-Insurance">Who Actually Writes Box Truck Insurance</a></li>
+        <li><a href="#What-Often-Goes-Wrong">The Traps</a></li>
+        <li><a href="#How-to-Actually-Pay-Less">How to Actually Pay Less</a></li>
+        <li><a href="#FMCSA-Requirements">FMCSA Requirements</a></li>
+        <li><a href="#Frequently-Asked-Questions">Frequently Asked Questions</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  </div><!-- .ti-layout -->
 
 </div><!-- .ti-page-wrap -->
 
@@ -708,6 +729,30 @@
   </div>
 </div>
 <script>
+// TOC active state tracking
+(function() {
+  var links = document.querySelectorAll('.ti-toc a');
+  var sections = [];
+  links.forEach(function(link) {
+    var id = link.getAttribute('href').slice(1);
+    var el = document.getElementById(id);
+    if (el) sections.push({ id: id, el: el, link: link });
+  });
+  function update() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var current = '';
+    sections.forEach(function(s) {
+      if (s.el.offsetTop - 100 <= scrollY) current = s.id;
+    });
+    links.forEach(function(l) { l.classList.remove('active'); });
+    sections.forEach(function(s) {
+      if (s.id === current) s.link.classList.add('active');
+    });
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
 // Sticky mobile CTA - show after scrolling 500px
 (function() {
   var cta = document.getElementById('mobileCta');
