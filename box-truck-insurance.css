@@ -208,10 +208,16 @@ a:hover { color: var(--orange); text-decoration: underline; }
   background: var(--navy);
   color: #e0e0e0;
 }
+.ti-section--dark,
+.ti-section--dark p,
+.ti-section--dark li,
+.ti-section--dark span,
+.ti-section--dark strong { color: #e0e0e0 !important; }
 .ti-section--dark h2,
-.ti-section--dark h3 { color: #fff; }
-.ti-section--dark a { color: #7cb3ff; }
-.ti-section--dark blockquote { border-left-color: var(--trust-blue); background: rgba(3,105,161,0.08); color: #ccc; }
+.ti-section--dark h3 { color: #fff !important; }
+.ti-section--dark .ti-accent { color: var(--orange) !important; }
+.ti-section--dark a { color: #7cb3ff !important; }
+.ti-section--dark blockquote { border-left-color: var(--trust-blue); background: rgba(3,105,161,0.08); color: #ccc !important; }
 .ti-section--dark .ti-pro-tip { background: rgba(255,255,255,0.06); border-left-color: #f59e0b; }
 
 /* Colored sections within the main column */
