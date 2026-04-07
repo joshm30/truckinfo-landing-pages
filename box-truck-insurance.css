@@ -11,7 +11,7 @@
   --border: #E2E8F0;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
@@ -24,7 +24,7 @@ body {
   background: #fff;
   overflow-x: hidden;
 }
-p, li { font-size: 1.125rem; line-height: 1.8; }
+p, li { font-size: 1rem; line-height: 1.8; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--trust-blue); text-decoration: none; }
 a:hover { color: var(--orange); text-decoration: underline; }
@@ -57,7 +57,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   padding: 24px;
 }
 .ti-toc h3 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--navy);
@@ -72,7 +72,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
 }
 .ti-toc li { margin-bottom: 10px; }
 .ti-toc a {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
   display: block;
   padding: 4px 0;
@@ -103,7 +103,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--navy);
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -111,7 +111,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   padding-top: 24px;
 }
 .breadcrumb-title {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-left: 6px;
 }
@@ -127,14 +127,14 @@ a:hover { color: var(--orange); text-decoration: underline; }
 }
 .ti-hero h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 2.625rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--navy);
   margin-bottom: 12px;
 }
 .ti-hero .ti-updated {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #888;
   margin-bottom: 24px;
   display: none;
@@ -153,7 +153,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   flex-shrink: 0;
 }
 .ti-byline-info {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #555;
 }
@@ -161,16 +161,16 @@ a:hover { color: var(--orange); text-decoration: underline; }
   font-weight: 700;
   color: var(--navy);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.8125rem;
   letter-spacing: 0.3px;
 }
 .ti-byline-meta {
   color: #888;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .ti-byline-verified {
   color: var(--trust-blue);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .ti-byline-verified svg {
   width: 14px;
@@ -181,7 +181,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
 }
 .ti-hero h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.4;
@@ -208,7 +208,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #555;
 }
@@ -224,7 +224,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   background: #fff;
 }
 .ti-logo-strip p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #888;
   margin-bottom: 20px;
   letter-spacing: 0.3px;
@@ -248,7 +248,7 @@ a:hover { color: var(--orange); text-decoration: underline; }
   opacity: 1;
 }
 .ti-logo-row .ti-more-carriers {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #888;
   white-space: nowrap;
@@ -292,14 +292,14 @@ h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
 h2 {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 20px;
   line-height: 1.25;
 }
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--navy);
   margin-top: 36px;
@@ -319,7 +319,7 @@ blockquote {
   border-radius: 0 8px 8px 0;
   font-style: italic;
   color: #444;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -341,14 +341,14 @@ blockquote {
 }
 .ti-stat-callout .ti-stat-number {
   font-family: 'Lato', sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--navy);
   line-height: 1.2;
   margin-bottom: 4px;
 }
 .ti-stat-callout .ti-stat-desc {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #555;
   margin: 0;
 }
@@ -363,7 +363,7 @@ blockquote {
   padding: 12px 14px;
   text-align: center;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: 'Lato', sans-serif;
@@ -374,7 +374,7 @@ blockquote {
   border-bottom: 1px solid #e2e2e2;
   vertical-align: top;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
 }
 .ti-table tbody td:first-child { text-align: left; font-weight: 600; }
@@ -430,7 +430,7 @@ blockquote {
     padding: 12px 16px;
     border-radius: 8px 8px 0 0;
     border-bottom: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: left;
   }
   .ti-table tbody td:first-child::before { display: none; }
@@ -456,7 +456,7 @@ blockquote {
 .ti-faq summary {
   padding: 18px 48px 18px 20px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--navy);
   cursor: pointer;
   list-style: none;
@@ -484,7 +484,7 @@ blockquote {
 .ti-faq details[open] { border-color: var(--trust-blue); }
 .ti-faq .ti-faq-answer {
   padding: 18px 20px;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.7;
   color: #444;
 }
@@ -518,7 +518,7 @@ blockquote {
 }
 .ti-testimonial-card .ti-quote-text {
   font-style: italic;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.7;
   color: #444;
   margin-bottom: 16px;
@@ -530,11 +530,11 @@ blockquote {
 }
 .ti-testimonial-card .ti-quote-name {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--navy);
 }
 .ti-testimonial-card .ti-quote-role {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #888;
 }
 @media (max-width: 768px) {
@@ -586,7 +586,7 @@ blockquote {
   align-items: center;
   justify-content: center;
   color: #9ca3af;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .ti-trending-card .ti-card-body {
   padding: 20px;
@@ -598,7 +598,7 @@ blockquote {
   margin: 0 0 8px;
 }
 .ti-trending-card .ti-card-body p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #666;
   margin: 0;
 }
@@ -646,7 +646,7 @@ blockquote {
   padding: 12px 16px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   text-decoration: none;
   transition: opacity 0.15s;
@@ -669,7 +669,7 @@ blockquote {
   border-top: 1px solid var(--border);
 }
 .ti-company-card .ti-cc-features p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--navy);
   margin: 0 0 4px;
@@ -677,7 +677,7 @@ blockquote {
 }
 .ti-company-card .ti-cc-note {
   padding: 12px 16px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #666;
   border-top: 1px solid var(--border);
   margin: 0;
@@ -736,7 +736,7 @@ blockquote {
   flex-shrink: 0;
 }
 .ti-cta .ti-cta-sub {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #888;
   margin-top: 10px;
   margin-bottom: 0;
@@ -795,7 +795,7 @@ blockquote {
   background: var(--orange);
   color: #fff;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding: 12px 28px;
   border-radius: 8px;
   text-decoration: none;
@@ -856,7 +856,7 @@ a, button, summary, .ti-cc-btn, .ti-cta-btn, .ti-trending-card { cursor: pointer
   color: #fff;
   padding: 8px 16px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 0.875rem;
   z-index: 9999;
   text-decoration: none;
 }

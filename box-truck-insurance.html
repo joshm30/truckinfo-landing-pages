@@ -741,7 +741,7 @@
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var target = document.getElementById(id);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (target) window.scrollTo(0, target.offsetTop - 20);
     });
   });
   function update() {
