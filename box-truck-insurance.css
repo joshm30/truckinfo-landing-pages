@@ -160,8 +160,8 @@ a:hover { color: var(--orange); text-decoration: underline; }
 .ti-byline-name {
   font-weight: 700;
   color: var(--navy);
-  text-transform: uppercase;
-  font-size: 0.8125rem;
+  text-transform: none;
+  font-size: 0.9375rem;
   letter-spacing: 0.3px;
 }
 .ti-byline-meta {
