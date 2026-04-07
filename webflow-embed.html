@@ -1,0 +1,16 @@
+<!-- Paste this into a single Webflow Embed element -->
+<link rel="stylesheet" href="https://truckinfo-net.github.io/assets/box-truck-insurance.css">
+<div id="ti-content"><p style="text-align:center;padding:40px;color:#888;">Loading...</p></div>
+<script>
+fetch('https://truckinfo-net.github.io/assets/box-truck-insurance.html')
+  .then(function(r){return r.text()})
+  .then(function(html){
+    document.getElementById('ti-content').innerHTML=html;
+    // Re-run any inline scripts
+    document.getElementById('ti-content').querySelectorAll('script').forEach(function(s){
+      var ns=document.createElement('script');
+      ns.textContent=s.textContent;
+      s.parentNode.replaceChild(ns,s);
+    });
+  });
+</script>
