@@ -1,0 +1,1081 @@
+<style>
+  .ti-research-wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  .ti-research-wrap .ti-research-h1 { font-family: 'Lato', Arial, sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1.2; color: #16324f; margin: 0 0 12px; }
+  @media (max-width: 640px) { .ti-research-wrap .ti-research-h1 { font-size: 1.75rem; } }
+  .ti-research-wrap .ti-byline { display: flex; align-items: center; gap: 14px; margin: 8px 0 40px; font-family: Lato, Arial, sans-serif; }
+  .ti-research-wrap .ti-byline img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  .ti-research-wrap .ti-byline-info { font-size: 0.875rem; line-height: 1.5; color: #555; }
+  .ti-research-wrap .ti-byline-name { font-weight: 700; color: #16324f; font-size: 0.9375rem; }
+  .ti-research-wrap .ti-byline-meta { color: #888; font-size: 0.8125rem; }
+  .ti-research-wrap .ti-byline-verified { color: #1f6feb; font-size: 0.8125rem; }
+  .ti-research-wrap .ti-byline-verified svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 2px; fill: #1f6feb; }
+</style>
+<div class="ti-research-wrap">
+  <h1 class="ti-research-h1">The Most Dangerous Cities for Pedestrians</h1>
+  <div class="ti-byline">
+    <img src="https://cdn.prod.website-files.com/618eac40a6f003094d45b2ac/69d591992dd0a842f90eb6d9_Josh%20Pro%20Photo.jpeg" alt="Josh - Commercial Trucking Insurance Agent">
+    <div class="ti-byline-info">
+      <div class="ti-byline-name">Josh</div>
+      <div class="ti-byline-meta">Last Updated: Apr 13, 2026 &middot; 12 min read</div>
+      <div class="ti-byline-verified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Licensed Commercial Insurance Agent</div>
+    </div>
+  </div>
+<div class="rich-text-block-15">
+  <p>Despite the health benefits of walking, only 2.4% of U.S. workers walk to work.</p>
+  <p>‍</p>
+  <p>As the federal government tries to <a href="https://www.cdc.gov/physicalactivity/walking/call-to-action/index.htm" target="_blank">promote walking and walkable cities</a>, one major obstacle they have identified is <a href="https://www.transportation.gov/mission/health/Encourage-and-Promote-Safe-Bicycling-and-Walking" target="_blank">road safety</a>. Unfortunately, that concern remains valid. Pedestrian deaths peaked at 7,593 in 2022 and the latest annual FARS file still shows 7,080 pedestrian fatalities in 2024.</p>
+  <p>‍</p>
+  <p>To see where pedestrians are most at risk, researchers at TruckInfo.net analyzed data from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a> and 2023 <a href="https://api.census.gov/data/2023/acs/acs1" target="_blank">U.S. Census Bureau ACS 1-year estimates</a> and found the following trends.</p>
+  <p>‍</p>
+  <h2>#1: Pedestrian fatalities are still 72% higher than they were in 2009</h2>
+  <p>The current pedestrian safety problem is not a short-term blip. NHTSA's latest annual file shows 7,080 pedestrian deaths in 2024, up 72.3% from 4,109 in 2009.</p>
+  <p>‍</p>
+  <div class="w-embed w-script">
+    <div id="ti-ped-trend"></div>
+    <style>
+      #ti-ped-trend { font-family: Lato, Arial, sans-serif; color: #16324f; }
+      #ti-ped-trend .ti-wrap {
+        background:
+          radial-gradient(circle at top right, rgba(242,101,34,.09), transparent 24%),
+          linear-gradient(180deg, #fff 0%, #fff8f4 100%);
+        border: 1px solid #ecd8cc;
+        border-radius: 0;
+        padding: 20px 18px 14px;
+        position: relative;
+      }
+      #ti-ped-trend .ti-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #16324f;
+        text-transform: uppercase;
+      }
+      #ti-ped-trend .ti-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      #ti-ped-trend .ti-brand strong { letter-spacing: .12em; }
+      #ti-ped-trend .ti-brand span { color: #6b7787; }
+      #ti-ped-trend .ti-title {
+        font-size: clamp(18px, 3.2vw, 22px);
+        line-height: 1.15;
+        font-weight: 900;
+        margin: 0 0 6px;
+        letter-spacing: -.02em;
+      }
+      #ti-ped-trend .ti-sub {
+        font-size: clamp(13px, 2.2vw, 14px);
+        line-height: 1.5;
+        color: #5f6d7c;
+        margin: 0 0 14px;
+      }
+      #ti-ped-trend svg { width: 100%; height: auto; display: block; overflow: visible; }
+      #ti-ped-trend .ti-grid { stroke: #e8ddd6; stroke-dasharray: 2 6; }
+      #ti-ped-trend .ti-axis text, #ti-ped-trend .ti-note { fill: #6d7885; font-size: 12px; }
+      #ti-ped-trend .ti-line-shadow { fill: none; stroke: rgba(22,50,79,.08); stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      #ti-ped-trend .ti-line { fill: none; stroke: #e66a2c; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      #ti-ped-trend .ti-dot { fill: #1c3f67; transition: transform .12s ease, fill .12s ease; transform-origin: center; cursor: pointer; }
+      #ti-ped-trend .ti-dot:hover, #ti-ped-trend .ti-dot.is-active { fill: #e66a2c; transform: scale(1.28); }
+      #ti-ped-trend .ti-anno { fill: #16324f; font-size: 12px; font-weight: 700; }
+      #ti-ped-trend .ti-note { margin-top: 6px; }
+      #ti-ped-trend .ti-tip {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0;
+        transform: translate(-50%, -115%);
+        background: rgba(32, 39, 49, .96);
+        color: #fff;
+        font-size: 12px;
+        line-height: 1.35;
+        padding: 8px 10px;
+        white-space: nowrap;
+        box-shadow: 0 10px 24px rgba(0,0,0,.18);
+        transition: opacity .12s ease;
+      }
+      #ti-ped-trend .ti-tip::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 6px solid transparent;
+        border-top-color: rgba(32, 39, 49, .96);
+      }
+      #ti-ped-trend .ti-tip strong { color: #9cc0ff; font-weight: 700; }
+      @media (max-width: 767px) {
+        #ti-ped-trend .ti-wrap { padding: 14px 12px 10px; }
+        #ti-ped-trend .ti-note { font-size: 11px; }
+        #ti-ped-trend .ti-anno { font-size: 11px; }
+        #ti-ped-trend .ti-tip { display: none; }
+      }
+    </style>
+    <script>
+    (() => {
+      const root = document.getElementById('ti-ped-trend');
+      if (!root) return;
+      const data = [
+        { year: 2009, fatalities: 4109 }, { year: 2010, fatalities: 4302 },
+        { year: 2011, fatalities: 4457 }, { year: 2012, fatalities: 4818 },
+        { year: 2013, fatalities: 4779 }, { year: 2014, fatalities: 4910 },
+        { year: 2015, fatalities: 5494 }, { year: 2016, fatalities: 6080 },
+        { year: 2017, fatalities: 6075 }, { year: 2018, fatalities: 6374 },
+        { year: 2019, fatalities: 6272 }, { year: 2020, fatalities: 6565 },
+        { year: 2021, fatalities: 7470 }, { year: 2022, fatalities: 7593 },
+        { year: 2023, fatalities: 7367 }, { year: 2024, fatalities: 7080 }
+      ];
+      const w = 760, h = 420, m = { top: 28, right: 18, bottom: 42, left: 58 };
+      const iw = w - m.left - m.right, ih = h - m.top - m.bottom;
+      const minY = 3800, maxY = 8000;
+      const ticks = [4000, 5000, 6000, 7000, 8000];
+      const x = i => m.left + (iw * i / (data.length - 1));
+      const y = v => m.top + ih - ((v - minY) / (maxY - minY)) * ih;
+      const fmt = n => n.toLocaleString('en-US');
+      const path = data.map((d, i) => `${i ? 'L' : 'M'} ${x(i).toFixed(1)} ${y(d.fatalities).toFixed(1)}`).join(' ');
+
+      root.innerHTML = `
+        <div class="ti-wrap">
+          <div class="ti-tip" aria-hidden="true"></div>
+          <div class="ti-brand"><strong>TruckInfo</strong><span>.net</span></div>
+          <h3 class="ti-title">Pedestrian fatalities climbed sharply after 2009</h3>
+          <p class="ti-sub">NHTSA FARS annual files show pedestrian deaths rose from 4,109 in 2009 to 7,080 in 2024.</p>
+          <svg viewBox="0 0 ${w} ${h}" aria-label="Line chart of pedestrian fatalities from 2009 to 2024">
+            ${ticks.map(t => `<line class="ti-grid" x1="${m.left}" y1="${y(t)}" x2="${w - m.right}" y2="${y(t)}"></line>`).join('')}
+            <path class="ti-line-shadow" d="${path}"></path>
+            <path class="ti-line" d="${path}"></path>
+            ${data.map((d, i) => `
+              <circle
+                class="ti-dot"
+                cx="${x(i)}"
+                cy="${y(d.fatalities)}"
+                r="${i >= data.length - 3 ? 4.5 : 3.5}"
+                data-year="${d.year}"
+                data-fatalities="${fmt(d.fatalities)}"
+              ></circle>`).join('')}
+            ${ticks.map(t => `<g class="ti-axis"><text x="${m.left - 10}" y="${y(t) + 4}" text-anchor="end">${t >= 1000 ? (t/1000)+'K' : t}</text></g>`).join('')}
+            ${data.map((d, i) => {
+              const show = [2009, 2014, 2019, 2024].includes(d.year);
+              return show ? `<g class="ti-axis"><text x="${x(i)}" y="${h - 14}" text-anchor="middle">${d.year}</text></g>` : '';
+            }).join('')}
+            <text class="ti-anno" x="${x(0) - 2}" y="${y(data[0].fatalities) - 12}">2009: ${fmt(data[0].fatalities)}</text>
+            <text class="ti-anno" x="${x(data.length - 1) - 64}" y="${y(data[data.length - 1].fatalities) - 12}">2024: ${fmt(data[data.length - 1].fatalities)}</text>
+          </svg>
+          <div class="ti-note">Source: NHTSA Fatality Analysis Reporting System, 2009-2024 annual files.</div>
+        </div>`;
+
+      const tip = root.querySelector('.ti-tip');
+      const dots = [...root.querySelectorAll('.ti-dot')];
+      const placeTip = dot => {
+        const cx = parseFloat(dot.getAttribute('cx'));
+        const cy = parseFloat(dot.getAttribute('cy'));
+        tip.innerHTML = `<strong>${dot.dataset.year}</strong>: ${dot.dataset.fatalities} fatalities`;
+        tip.style.left = `${(cx / w) * 100}%`;
+        tip.style.top = `${(cy / h) * 100}%`;
+        tip.style.opacity = '1';
+        dots.forEach(d => d.classList.remove('is-active'));
+        dot.classList.add('is-active');
+      };
+      const clearTip = () => {
+        tip.style.opacity = '0';
+        dots.forEach(d => d.classList.remove('is-active'));
+      };
+      dots.forEach(dot => {
+        dot.addEventListener('mouseenter', () => placeTip(dot));
+        dot.addEventListener('focus', () => placeTip(dot));
+        dot.addEventListener('mouseleave', clearTip);
+        dot.addEventListener('blur', clearTip);
+      });
+    })();
+    </script>
+  </div>
+  <p>‍</p>
+  <h2>#2: Large cities where more people walk to work tend to have lower pedestrian fatality rates</h2>
+  <p>Among large cities, walk-to-work share and pedestrian fatality rates are negatively correlated. In TruckInfo.net's matched sample of 50 large cities, places where more residents walk to work generally post lower pedestrian fatality rates.</p>
+  <p>‍</p>
+  <div class="w-embed w-script">
+    <div id="ti-ped-scatter"></div>
+    <style>
+      #ti-ped-scatter { font-family: Lato, Arial, sans-serif; color: #16324f; }
+      #ti-ped-scatter .ti-wrap { background: #fff; border: 1px solid #dfe7ee; border-radius: 16px; padding: 18px 18px 12px; overflow: hidden; }
+      #ti-ped-scatter .ti-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #16324f;
+        text-transform: uppercase;
+      }
+      #ti-ped-scatter .ti-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      #ti-ped-scatter .ti-brand strong { letter-spacing: .12em; }
+      #ti-ped-scatter .ti-brand span { color: #6b7787; }
+      #ti-ped-scatter .ti-title { font-size: clamp(18px, 3.2vw, 22px); line-height: 1.2; font-weight: 800; margin: 0 0 6px; }
+      #ti-ped-scatter .ti-sub { font-size: clamp(13px, 2.2vw, 14px); line-height: 1.5; color: #51606f; margin: 0 0 14px; }
+      #ti-ped-scatter svg { width: 100%; height: auto; display: block; overflow: visible; }
+      #ti-ped-scatter .ti-grid { stroke: #e6edf3; stroke-dasharray: 3 5; }
+      #ti-ped-scatter .ti-axis text, #ti-ped-scatter .ti-note { fill: #5b6978; font-size: 12px; }
+      #ti-ped-scatter .ti-trend { stroke: #f26522; stroke-width: 3; stroke-dasharray: 8 6; }
+      #ti-ped-scatter .ti-point { fill: rgba(22,50,79,.7); }
+      #ti-ped-scatter .ti-point.is-highlight { fill: #f26522; }
+      #ti-ped-scatter .ti-label { fill: #16324f; font-size: 12px; font-weight: 700; }
+      @media (max-width: 767px) {
+        #ti-ped-scatter .ti-wrap { padding: 14px 12px 10px; }
+        #ti-ped-scatter .ti-label { font-size: 11px; }
+        #ti-ped-scatter .ti-note { font-size: 11px; }
+      }
+    </style>
+    <script>
+    (() => {
+      const root = document.getElementById('ti-ped-scatter');
+      if (!root) return;
+      const data = [
+        { city: "Memphis", state: "Tennessee", rate: 69.5, walk_pct: 2.1 },
+        { city: "Albuquerque", state: "New Mexico", rate: 62.5, walk_pct: 1.7 },
+        { city: "Tucson", state: "Arizona", rate: 55.9, walk_pct: 2.3 },
+        { city: "Phoenix", state: "Arizona", rate: 52.4, walk_pct: 1.5 },
+        { city: "Detroit", state: "Michigan", rate: 47.7, walk_pct: 2.1 },
+        { city: "New Orleans", state: "Louisiana", rate: 45.3, walk_pct: 5.9 },
+        { city: "Tampa", state: "Florida", rate: 44.4, walk_pct: 3.0 },
+        { city: "Atlanta", state: "Georgia", rate: 44.0, walk_pct: 5.2 },
+        { city: "Miami", state: "Florida", rate: 43.9, walk_pct: 5.5 },
+        { city: "Dallas", state: "Texas", rate: 42.9, walk_pct: 1.9 },
+        { city: "Bakersfield", state: "California", rate: 41.9, walk_pct: 0.6 },
+        { city: "Fresno", state: "California", rate: 40.1, walk_pct: 1.9 },
+        { city: "Sacramento", state: "California", rate: 37.2, walk_pct: 1.9 },
+        { city: "Jacksonville", state: "Florida", rate: 35.8, walk_pct: 1.1 },
+        { city: "San Antonio", state: "Texas", rate: 35.7, walk_pct: 1.5 },
+        { city: "Tulsa", state: "Oklahoma", rate: 35.5, walk_pct: 2.1 },
+        { city: "Houston", state: "Texas", rate: 34.7, walk_pct: 1.8 },
+        { city: "Los Angeles", state: "California", rate: 32.8, walk_pct: 3.3 },
+        { city: "Austin", state: "Texas", rate: 32.7, walk_pct: 2.2 },
+        { city: "Oklahoma City", state: "Oklahoma", rate: 30.9, walk_pct: 1.3 },
+        { city: "Long Beach", state: "California", rate: 30.3, walk_pct: 2.0 },
+        { city: "Fort Worth", state: "Texas", rate: 29.4, walk_pct: 1.1 },
+        { city: "El Paso", state: "Texas", rate: 28.4, walk_pct: 1.1 },
+        { city: "Portland", state: "Oregon", rate: 28.2, walk_pct: 5.1 },
+        { city: "Kansas City", state: "Missouri", rate: 27.6, walk_pct: 1.7 },
+        { city: "Baltimore", state: "Maryland", rate: 27.4, walk_pct: 6.1 },
+        { city: "San Diego", state: "California", rate: 27.2, walk_pct: 4.4 },
+        { city: "Milwaukee", state: "Wisconsin", rate: 26.7, walk_pct: 4.5 },
+        { city: "Philadelphia", state: "Pennsylvania", rate: 26.3, walk_pct: 9.4 },
+        { city: "Charlotte", state: "North Carolina", rate: 26.3, walk_pct: 2.0 },
+        { city: "Aurora", state: "Colorado", rate: 25.6, walk_pct: 2.3 },
+        { city: "Oakland", state: "California", rate: 23.6, walk_pct: 2.9 },
+        { city: "San Jose", state: "California", rate: 23.3, walk_pct: 1.7 },
+        { city: "Denver", state: "Colorado", rate: 22.9, walk_pct: 3.6 },
+        { city: "Mesa", state: "Arizona", rate: 21.7, walk_pct: 1.4 },
+        { city: "Las Vegas", state: "Nevada", rate: 21.0, walk_pct: 1.0 },
+        { city: "Raleigh", state: "North Carolina", rate: 20.7, walk_pct: 2.0 },
+        { city: "Columbus", state: "Ohio", rate: 19.8, walk_pct: 2.3 },
+        { city: "San Francisco", state: "California", rate: 19.2, walk_pct: 10.3 },
+        { city: "Wichita", state: "Kansas", rate: 18.4, walk_pct: 1.2 },
+        { city: "Arlington", state: "Texas", rate: 18.1, walk_pct: 2.0 },
+        { city: "Chicago", state: "Illinois", rate: 17.4, walk_pct: 6.5 },
+        { city: "Seattle", state: "Washington", rate: 17.1, walk_pct: 8.5 },
+        { city: "Boston", state: "Massachusetts", rate: 12.7, walk_pct: 13.9 },
+        { city: "Washington", state: "District Of Columbia", rate: 12.5, walk_pct: 11.3 },
+        { city: "Omaha", state: "Nebraska", rate: 12.4, walk_pct: 1.8 },
+        { city: "Minneapolis", state: "Minnesota", rate: 12.2, walk_pct: 6.0 },
+        { city: "Colorado Springs", state: "Colorado", rate: 11.1, walk_pct: 1.9 },
+        { city: "Virginia Beach", state: "Virginia", rate: 8.6, walk_pct: 1.3 }
+      ];
+      const w = 760, h = 460, m = { top: 24, right: 22, bottom: 48, left: 54 };
+      const iw = w - m.left - m.right, ih = h - m.top - m.bottom;
+      const minX = 0, maxX = 14.5, minY = 0, maxY = 72;
+      const x = v => m.left + ((v - minX) / (maxX - minX)) * iw;
+      const y = v => m.top + ih - ((v - minY) / (maxY - minY)) * ih;
+      const xTicks = [0, 2, 4, 6, 8, 10, 12, 14];
+      const yTicks = [10, 20, 30, 40, 50, 60, 70];
+      const points = data.filter(d => typeof d.walk_pct === 'number');
+      const mx = points.reduce((a, d) => a + d.walk_pct, 0) / points.length;
+      const my = points.reduce((a, d) => a + d.rate, 0) / points.length;
+      const num = points.reduce((a, d) => a + (d.walk_pct - mx) * (d.rate - my), 0);
+      const slope = num / points.reduce((a, d) => a + (d.walk_pct - mx) ** 2, 0);
+      const intercept = my - slope * mx;
+      const lineY1 = intercept + slope * minX;
+      const lineY2 = intercept + slope * maxX;
+      const highlights = new Set(['Memphis', 'Phoenix', 'New Orleans', 'San Francisco', 'Boston']);
+      root.innerHTML = `
+        <div class="ti-wrap">
+          <div class="ti-brand"><strong>TruckInfo</strong><span>.net</span></div>
+          <h3 class="ti-title">Large-city fatality rates fall as walk-to-work share rises</h3>
+          <p class="ti-sub">This updated scatter uses 50 large U.S. cities with 2023 Census commute data and pedestrian fatality rates from the 2015-2024 FARS window.</p>
+          <svg viewBox="0 0 ${w} ${h}" aria-label="Scatter plot of walk to work share versus pedestrian fatality rate">
+            ${xTicks.map(t => `<line class="ti-grid" x1="${x(t)}" y1="${m.top}" x2="${x(t)}" y2="${h - m.bottom}"></line>`).join('')}
+            ${yTicks.map(t => `<line class="ti-grid" x1="${m.left}" y1="${y(t)}" x2="${w - m.right}" y2="${y(t)}"></line>`).join('')}
+            <line class="ti-trend" x1="${x(minX)}" y1="${y(lineY1)}" x2="${x(maxX)}" y2="${y(lineY2)}"></line>
+            ${points.map(d => `<circle class="ti-point ${highlights.has(d.city) ? 'is-highlight' : ''}" cx="${x(d.walk_pct)}" cy="${y(d.rate)}" r="${highlights.has(d.city) ? 5.2 : 4}"></circle>`).join('')}
+            ${xTicks.map(t => `<g class="ti-axis"><text x="${x(t)}" y="${h - 16}" text-anchor="middle">${t}%</text></g>`).join('')}
+            ${yTicks.map(t => `<g class="ti-axis"><text x="${m.left - 10}" y="${y(t) + 4}" text-anchor="end">${t}</text></g>`).join('')}
+            <text class="ti-label" x="${x(2.1) + 8}" y="${y(69.5) - 6}">Memphis</text>
+            <text class="ti-label" x="${x(1.5) + 8}" y="${y(52.4) - 6}">Phoenix</text>
+            <text class="ti-label" x="${x(5.9) + 8}" y="${y(45.3) - 6}">New Orleans</text>
+            <text class="ti-label" x="${x(10.3) + 8}" y="${y(19.2) - 6}">San Francisco</text>
+            <text class="ti-label" x="${x(13.9) - 8}" y="${y(12.7) - 6}" text-anchor="end">Boston</text>
+          </svg>
+          <div class="ti-note">Source: NHTSA FARS 2015-2024 and U.S. Census Bureau ACS 2023 1-year estimates.</div>
+        </div>`;
+    })();
+    </script>
+  </div>
+  <p>‍</p>
+  <h2>#3: The most dangerous roads are not limited to the biggest counties</h2>
+  <p>Even when looking at total pedestrian fatalities instead of per-capita rates, several of the most dangerous roadways are outside the country's very largest counties. Three of the top 10 are in counties with fewer than 1 million residents.</p>
+  <p>‍</p>
+  <div class="w-embed">
+    <style>
+      .ti-table-card {
+        font-family: Lato, Arial, sans-serif;
+        color: #16324f;
+      }
+      .ti-table-card-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #16324f;
+        text-transform: uppercase;
+      }
+      .ti-table-card-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      .ti-table-card-brand strong { letter-spacing: .12em; }
+      .ti-table-card-brand span { color: #6b7787; }
+      .ti-stat-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+      .ti-stat-table{border-collapse:collapse;border-spacing:0;width:100%;min-width:560px;font-size:14px;line-height:1.4;font-family:Lato, Arial, sans-serif}
+      .ti-stat-table th,.ti-stat-table td{border:1px solid #e6e6e6;padding:8px 10px;text-align:left;vertical-align:top}
+      .ti-stat-table th{background:#f46524;color:#fff}
+      .ti-stat-table tbody tr:nth-child(even) td{background:#ffe6dd}
+      @media (max-width: 767px) {
+        .ti-stat-table{font-size:13px;min-width:520px}
+        .ti-stat-table th,.ti-stat-table td{padding:7px 8px}
+      }
+    </style>
+    <div class="ti-table-card">
+    <div class="ti-table-card-brand"><strong>TruckInfo</strong><span>.net</span></div>
+    <div class="ti-stat-table-wrap">
+    <table class="ti-stat-table">
+      <thead>
+        <tr>
+          <th>Roadway (&amp; County)</th>
+          <th>Pedestrian Fatalities<br>(2015-2024)</th>
+          <th>Population 2023</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>I-35 Travis, TX</td><td>80</td><td>1,334,961</td></tr>
+        <tr><td>US-19 Pinellas, FL</td><td>79</td><td>961,596</td></tr>
+        <tr><td>I-5 San Diego, CA</td><td>78</td><td>3,269,973</td></tr>
+        <tr><td>US-19 Pasco, FL</td><td>76</td><td>632,996</td></tr>
+        <tr><td>I-10 Los Angeles, CA</td><td>57</td><td>9,663,345</td></tr>
+        <tr><td>SR-50 Orange, FL</td><td>57</td><td>1,471,416</td></tr>
+        <tr><td>I-15 San Bernardino, CA</td><td>53</td><td>2,195,611</td></tr>
+        <tr><td>US-41 Hillsborough, FL</td><td>51</td><td>1,535,564</td></tr>
+        <tr><td>I-45 Harris, TX</td><td>48</td><td>4,835,125</td></tr>
+        <tr><td>US-41 Manatee, FL</td><td>47</td><td>441,095</td></tr>
+      </tbody>
+    </table>
+    </div>
+    </div>
+  </div>
+  <p>‍</p>
+  <div class="w-embed">
+    <style>
+      .ti-resource-box {
+        background: #1c2036;
+        border: 1px solid #2a3353;
+        border-radius: 12px;
+        padding: 20px 22px;
+        margin: 0;
+        color: #eef3fb;
+        font-family: Lato, Arial, sans-serif;
+      }
+      .ti-resource-box-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 0 0 12px;
+      }
+      .ti-resource-box-title {
+        margin: 0;
+        font-size: clamp(24px, 3.6vw, 34px);
+        line-height: 1.08;
+        font-weight: 900;
+        letter-spacing: -.03em;
+      }
+      .ti-resource-box-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .ti-resource-box-title .accent {
+        color: #f47b3a;
+      }
+      .ti-resource-box-sub {
+        margin: 0 0 18px;
+        padding: 14px 16px;
+        border-left: 4px solid #2c8fe3;
+        background: #242a46;
+        font-size: 15px;
+        line-height: 1.6;
+        font-style: italic;
+        color: #dbe5f5;
+      }
+      .ti-resource-box-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .ti-resource-box-item {
+        background: #222842;
+        border: 1px solid #30395c;
+        border-radius: 10px;
+        padding: 14px;
+      }
+      .ti-resource-box-item strong {
+        display: block;
+        margin: 0 0 6px;
+        font-size: 13px;
+        line-height: 1.3;
+        color: #ff8a4d;
+      }
+      .ti-resource-box-item p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #eef3fb;
+      }
+      .ti-resource-box-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #eef3fb;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .ti-resource-box-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      .ti-resource-box-brand strong {
+        letter-spacing: .12em;
+      }
+      .ti-resource-box-brand span {
+        color: #a9b6cf;
+      }
+      @media (max-width: 767px) {
+        .ti-resource-box {
+          padding: 16px 14px;
+        }
+        .ti-resource-box-title {
+          font-size: 26px;
+        }
+        .ti-resource-box-head {
+          display: block;
+        }
+        .ti-resource-box-brand {
+          margin-top: 10px;
+        }
+        .ti-resource-box-sub {
+          font-size: 14px;
+          padding: 12px 13px;
+        }
+        .ti-resource-box-grid {
+          grid-template-columns: 1fr;
+        }
+        .ti-resource-box-item p {
+          font-size: 13px;
+        }
+      }
+    </style>
+    <div class="ti-resource-box">
+      <div class="ti-resource-box-head">
+        <p class="ti-resource-box-title"><a href="/dot-recommender">Free Tool for <span class="accent">Truck Companies Shopping Insurance</span></a></p>
+        <div class="ti-resource-box-brand"><strong>TruckInfo</strong><span>.net</span></div>
+      </div>
+      <div class="ti-resource-box-grid">
+        <div class="ti-resource-box-item">
+          <strong>💸 Generic guides</strong>
+          <p>Often send readers to the same companies.</p>
+        </div>
+        <div class="ti-resource-box-item">
+          <strong>🧩 Our Tool</strong>
+          <p>Uses state, cargo type, safety profile, and other trucking details.</p>
+        </div>
+        <div class="ti-resource-box-item">
+          <strong>⏱️ Get Insured Faster</strong>
+          <p>Helps you skip carriers that may not write your risk.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>‍</p>
+  <h2>#4: Memphis, TN is still the most dangerous large city for pedestrians</h2>
+  <p>Among large cities with populations above 350,000, Memphis ranks first with 69.5 pedestrian fatalities per 100,000 residents over the 2015-2024 window.</p>
+  <p>‍</p>
+  <div class="w-embed">
+    <div class="ti-table-card">
+    <div class="ti-table-card-brand"><strong>TruckInfo</strong><span>.net</span></div>
+    <div class="ti-stat-table-wrap">
+    <table class="ti-stat-table" style="min-width:720px">
+      <thead>
+        <tr>
+          <th>Large Cities</th>
+          <th>Fatalities per<br>100k People</th>
+          <th>Total Pedestrian<br>Fatalities (2015-2024)</th>
+          <th>% Walk to Work</th>
+          <th>Population 2023</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Memphis, TN</td><td>69.5</td><td>430</td><td>2.1%</td><td>618,655</td></tr>
+        <tr><td>Albuquerque, NM</td><td>62.5</td><td>350</td><td>1.7%</td><td>560,283</td></tr>
+        <tr><td>Tucson, AZ</td><td>55.9</td><td>306</td><td>2.3%</td><td>547,232</td></tr>
+        <tr><td>Phoenix, AZ</td><td>52.4</td><td>864</td><td>1.5%</td><td>1,650,051</td></tr>
+        <tr><td>Detroit, MI</td><td>47.7</td><td>302</td><td>2.1%</td><td>633,221</td></tr>
+        <tr><td>New Orleans, LA</td><td>45.3</td><td>165</td><td>5.9%</td><td>364,136</td></tr>
+        <tr><td>Tampa, FL</td><td>44.4</td><td>179</td><td>3.0%</td><td>403,361</td></tr>
+        <tr><td>Atlanta, GA</td><td>44.0</td><td>225</td><td>5.2%</td><td>510,826</td></tr>
+        <tr><td>Miami, FL</td><td>43.9</td><td>200</td><td>5.5%</td><td>455,955</td></tr>
+        <tr><td>Dallas, TX</td><td>42.9</td><td>559</td><td>1.9%</td><td>1,302,859</td></tr>
+      </tbody>
+    </table>
+    </div>
+    </div>
+  </div>
+  <p>‍</p>
+  <h2>#5: New Mexico is the most dangerous state for pedestrians</h2>
+  <p>Louisiana, Florida, Arizona, and South Carolina round out the top 5 states based on pedestrian fatalities per 100,000 residents.</p>
+  <p>‍</p>
+  <div class="w-embed w-script">
+    <div id="ti-ped-states"></div>
+    <style>
+      #ti-ped-states { font-family: Lato, Arial, sans-serif; color: #16324f; }
+      #ti-ped-states .ti-wrap { background: linear-gradient(180deg, #fff 0%, #f7fbff 100%); border: 1px solid #d8e4ef; border-radius: 16px; padding: 18px 18px 12px; overflow: hidden; }
+      #ti-ped-states .ti-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #16324f;
+        text-transform: uppercase;
+      }
+      #ti-ped-states .ti-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      #ti-ped-states .ti-brand strong { letter-spacing: .12em; }
+      #ti-ped-states .ti-brand span { color: #6b7787; }
+      #ti-ped-states .ti-title { font-size: clamp(18px, 3.2vw, 22px); line-height: 1.2; font-weight: 800; margin: 0 0 6px; }
+      #ti-ped-states .ti-sub { font-size: clamp(13px, 2.2vw, 14px); line-height: 1.5; color: #51606f; margin: 0 0 14px; }
+      #ti-ped-states svg { width: 100%; height: auto; display: block; overflow: visible; }
+      #ti-ped-states .ti-axis text, #ti-ped-states .ti-note { fill: #5b6978; font-size: 12px; }
+      #ti-ped-states .ti-bar { fill: #16324f; }
+      #ti-ped-states .ti-bar.is-top { fill: #f26522; }
+      #ti-ped-states .ti-grid { stroke: #e6edf3; stroke-dasharray: 3 5; }
+      #ti-ped-states .ti-label { fill: #16324f; font-size: 12px; font-weight: 700; }
+      @media (max-width: 767px) {
+        #ti-ped-states .ti-wrap { padding: 14px 12px 10px; }
+        #ti-ped-states .ti-label { font-size: 11px; }
+        #ti-ped-states .ti-note { font-size: 11px; }
+      }
+    </style>
+    <script>
+    (() => {
+      const root = document.getElementById('ti-ped-states');
+      if (!root) return;
+      const data = [
+        { state: 'New Mexico', rate: 39.6 },
+        { state: 'Louisiana', rate: 31.5 },
+        { state: 'Florida', rate: 31.4 },
+        { state: 'Arizona', rate: 30.8 },
+        { state: 'South Carolina', rate: 30.6 },
+        { state: 'Delaware', rate: 28.2 },
+        { state: 'Mississippi', rate: 27.8 },
+        { state: 'California', rate: 26.5 },
+        { state: 'Nevada', rate: 26.3 },
+        { state: 'Georgia', rate: 24.5 }
+      ];
+      const w = 760, h = 430, m = { top: 18, right: 18, bottom: 38, left: 128 };
+      const iw = w - m.left - m.right, ih = h - m.top - m.bottom;
+      const maxX = 42;
+      const row = ih / data.length;
+      const x = v => m.left + (v / maxX) * iw;
+      const ticks = [10, 20, 30, 40];
+      root.innerHTML = `
+        <div class="ti-wrap">
+          <div class="ti-brand"><strong>TruckInfo</strong><span>.net</span></div>
+          <h3 class="ti-title">New Mexico remains the most dangerous state for pedestrians</h3>
+          <p class="ti-sub">Top states ranked by pedestrian fatalities per 100,000 residents using the 2015-2024 fatality window and 2023 Census population estimates.</p>
+          <svg viewBox="0 0 ${w} ${h}" aria-label="Horizontal bar chart of the top states for pedestrian fatality rates">
+            ${ticks.map(t => `<line class="ti-grid" x1="${x(t)}" y1="${m.top}" x2="${x(t)}" y2="${h - m.bottom}"></line>`).join('')}
+            ${data.map((d, i) => {
+              const y = m.top + i * row + row * 0.18;
+              const barH = row * 0.64;
+              return `
+                <text class="ti-label" x="${m.left - 10}" y="${y + barH / 2 + 4}" text-anchor="end">${d.state}</text>
+                <rect class="ti-bar ${i === 0 ? 'is-top' : ''}" x="${m.left}" y="${y}" width="${x(d.rate) - m.left}" height="${barH}" rx="8"></rect>
+                <text class="ti-label" x="${x(d.rate) + 8}" y="${y + barH / 2 + 4}">${d.rate.toFixed(1)}</text>`;
+            }).join('')}
+            ${ticks.map(t => `<g class="ti-axis"><text x="${x(t)}" y="${h - 14}" text-anchor="middle">${t}</text></g>`).join('')}
+          </svg>
+          <div class="ti-note">Source: NHTSA FARS 2015-2024 and U.S. Census Bureau ACS 2023 1-year estimates.</div>
+        </div>`;
+    })();
+    </script>
+  </div>
+  <p>‍</p>
+  <h2>Full Data</h2>
+  <div class="w-embed w-script">
+    <div id="ti-ped-full-data"></div>
+    <style>
+      #ti-ped-full-data { font-family: Lato, Arial, sans-serif; color: #16324f; }
+      #ti-ped-full-data .ti-wrap {
+        background: linear-gradient(180deg, #ffffff 0%, #fafcfe 100%);
+        border: 1px solid #d9e4ee;
+        padding: 18px;
+      }
+      #ti-ped-full-data .ti-title {
+        margin: 0 0 6px;
+        font-size: clamp(18px, 3.2vw, 22px);
+        line-height: 1.15;
+        font-weight: 900;
+        letter-spacing: -.02em;
+      }
+      #ti-ped-full-data .ti-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #16324f;
+        text-transform: uppercase;
+      }
+      #ti-ped-full-data .ti-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      #ti-ped-full-data .ti-brand strong { letter-spacing: .12em; }
+      #ti-ped-full-data .ti-brand span { color: #6b7787; }
+      #ti-ped-full-data .ti-sub {
+        margin: 0 0 14px;
+        font-size: clamp(13px, 2.2vw, 14px);
+        line-height: 1.5;
+        color: #5f6d7c;
+      }
+      #ti-ped-full-data .ti-tabs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 0 0 14px;
+      }
+      #ti-ped-full-data .ti-tab {
+        appearance: none;
+        border: 1px solid #d7e0e8;
+        background: #fff;
+        color: #16324f;
+        padding: 8px 12px;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      #ti-ped-full-data .ti-tab.is-active {
+        background: #16324f;
+        border-color: #16324f;
+        color: #fff;
+      }
+      #ti-ped-full-data .ti-panel { display: none; }
+      #ti-ped-full-data .ti-panel.is-active { display: block; }
+      #ti-ped-full-data .ti-table-wrap {
+        overflow-x: auto;
+        border: 1px solid #e5edf3;
+        background: #fff;
+      }
+      #ti-ped-full-data table {
+        width: 100%;
+        min-width: 620px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      #ti-ped-full-data th,
+      #ti-ped-full-data td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #edf2f6;
+        text-align: left;
+        vertical-align: top;
+      }
+      #ti-ped-full-data th {
+        background: #f5f8fb;
+        color: #16324f;
+        font-weight: 800;
+        position: sticky;
+        top: 0;
+      }
+      #ti-ped-full-data tbody tr:nth-child(even) td { background: #fbfdff; }
+      #ti-ped-full-data td.num,
+      #ti-ped-full-data th.num { text-align: right; white-space: nowrap; }
+      #ti-ped-full-data .ti-note {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #6d7885;
+      }
+      @media (max-width: 767px) {
+        #ti-ped-full-data .ti-wrap { padding: 14px 12px; }
+        #ti-ped-full-data .ti-tab { font-size: 12px; padding: 7px 10px; }
+        #ti-ped-full-data table { min-width: 520px; font-size: 13px; }
+        #ti-ped-full-data th, #ti-ped-full-data td { padding: 8px 9px; }
+        #ti-ped-full-data .ti-note { font-size: 11px; }
+      }
+    </style>
+    <script>
+    (() => {
+      const root = document.getElementById('ti-ped-full-data');
+      if (!root) return;
+      const roads = [
+        ["I-35 Travis, TX", 80, "1,334,961"],
+        ["US-19 Pinellas, FL", 79, "961,596"],
+        ["I-5 San Diego, CA", 78, "3,269,973"],
+        ["US-19 Pasco, FL", 76, "632,996"],
+        ["I-10 Los Angeles, CA", 57, "9,663,345"],
+        ["SR-50 Orange, FL", 57, "1,471,416"],
+        ["I-15 San Bernardino, CA", 53, "2,195,611"],
+        ["US-41 Hillsborough, FL", 51, "1,535,564"],
+        ["I-45 Harris, TX", 48, "4,835,125"],
+        ["US-41 Manatee, FL", 47, "441,095"]
+      ];
+      const cities = [
+        ["Memphis, TN", "69.5", 430, "2.1%", "618,655"],
+        ["Albuquerque, NM", "62.5", 350, "1.7%", "560,283"],
+        ["Tucson, AZ", "55.9", 306, "2.3%", "547,232"],
+        ["Phoenix, AZ", "52.4", 864, "1.5%", "1,650,051"],
+        ["Detroit, MI", "47.7", 302, "2.1%", "633,221"],
+        ["New Orleans, LA", "45.3", 165, "5.9%", "364,136"],
+        ["Tampa, FL", "44.4", 179, "3.0%", "403,361"],
+        ["Atlanta, GA", "44.0", 225, "5.2%", "510,826"],
+        ["Miami, FL", "43.9", 200, "5.5%", "455,955"],
+        ["Dallas, TX", "42.9", 559, "1.9%", "1,302,859"]
+      ];
+      const states = [
+        ["New Mexico", "39.6", 838, "2,114,371"],
+        ["Louisiana", "31.5", 1443, "4,573,749"],
+        ["Florida", "31.4", 7092, "22,610,726"],
+        ["Arizona", "30.8", 2289, "7,431,344"],
+        ["South Carolina", "30.6", 1643, "5,373,555"],
+        ["Delaware", "28.2", 291, "1,031,890"],
+        ["Mississippi", "27.8", 816, "2,939,690"],
+        ["California", "26.5", 10326, "38,965,193"],
+        ["Nevada", "26.3", 839, "3,194,176"],
+        ["Georgia", "24.5", 2704, "11,029,227"]
+      ];
+      const renderRows = (rows, numericCols) =>
+        rows.map(row => `<tr>${row.map((cell, i) => `<td class="${numericCols.includes(i) ? 'num' : ''}">${cell}</td>`).join('')}</tr>`).join('');
+      root.innerHTML = `
+        <div class="ti-wrap">
+          <div class="ti-brand"><strong>TruckInfo</strong><span>.net</span></div>
+          <h3 class="ti-title">Full Data Snapshot</h3>
+          <p class="ti-sub">This section replaces the old Infogram embed with the current top roadway, large-city, and state rankings used in the 2026 refresh.</p>
+          <div class="ti-tabs">
+            <button class="ti-tab is-active" data-tab="roads">Roads</button>
+            <button class="ti-tab" data-tab="cities">Large Cities</button>
+            <button class="ti-tab" data-tab="states">States</button>
+          </div>
+          <div class="ti-panel is-active" data-panel="roads">
+            <div class="ti-table-wrap">
+              <table>
+                <thead><tr><th>Roadway (&amp; County)</th><th class="num">Pedestrian Fatalities (2015-2024)</th><th class="num">Population 2023</th></tr></thead>
+                <tbody>${renderRows(roads, [1,2])}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ti-panel" data-panel="cities">
+            <div class="ti-table-wrap">
+              <table>
+                <thead><tr><th>Large City</th><th class="num">Fatalities per 100k</th><th class="num">Total Fatalities</th><th class="num">% Walk to Work</th><th class="num">Population 2023</th></tr></thead>
+                <tbody>${renderRows(cities, [1,2,3,4])}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ti-panel" data-panel="states">
+            <div class="ti-table-wrap">
+              <table>
+                <thead><tr><th>State</th><th class="num">Fatalities per 100k</th><th class="num">Total Fatalities</th><th class="num">Population 2023</th></tr></thead>
+                <tbody>${renderRows(states, [1,2,3])}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ti-note">Source: NHTSA FARS 2015-2024 annual files and U.S. Census Bureau ACS 2023 1-year estimates.</div>
+        </div>`;
+      const tabs = [...root.querySelectorAll('.ti-tab')];
+      const panels = [...root.querySelectorAll('.ti-panel')];
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          tabs.forEach(t => t.classList.toggle('is-active', t === tab));
+          panels.forEach(p => p.classList.toggle('is-active', p.dataset.panel === target));
+        });
+      });
+    })();
+    </script>
+  </div>
+
+  <p>‍</p>
+  <h2>Methodology</h2>
+  <p>Fatality counts were sourced from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a>. This refresh used the 2015-2024 annual files, with the 2024 file representing the latest annual release available from NHTSA as of April 2026. Population and walk-to-work data were sourced from the <a href="https://api.census.gov/data/2023/acs/acs1" target="_blank">U.S. Census Bureau's 2023 ACS 1-year estimates</a>. Large cities were defined as cities with populations over 350,000.</p>
+  <p>‍</p>
+  <div class="w-embed">
+    <style>
+      .ti-matcher-preview {
+        background:
+          radial-gradient(circle at top right, rgba(110,186,255,.18), transparent 26%),
+          linear-gradient(180deg, #133255 0%, #163c68 100%);
+        border: 1px solid #2f5d91;
+        border-radius: 16px;
+        padding: 22px 20px;
+        color: #eef4ff;
+        font-family: Lato, Arial, sans-serif;
+      }
+      .ti-matcher-preview-grid {
+        display: block;
+      }
+      .ti-matcher-topline {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 14px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #eef4ff;
+        text-transform: uppercase;
+      }
+      .ti-matcher-topline::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      .ti-matcher-topline strong { letter-spacing: .12em; }
+      .ti-matcher-topline span { color: #adc3df; }
+      .ti-matcher-preview-title {
+        margin: 0 0 16px;
+        font-size: clamp(22px, 3.8vw, 30px);
+        line-height: 1.1;
+        font-weight: 900;
+        letter-spacing: -.02em;
+        color: #eef4ff;
+      }
+      .ti-matcher-preview-title .accent {
+        color: #f47b3a;
+      }
+      .ti-matcher-compare {
+        margin-top: 18px;
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(173,195,223,.22);
+        border-radius: 14px;
+        overflow-x: auto;
+      }
+      .ti-matcher-compare table {
+        width: 100%;
+        min-width: 620px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: Lato, Arial, sans-serif;
+      }
+      .ti-matcher-compare thead th {
+        background: rgba(12,33,59,.35);
+        font-size: 13px;
+        font-weight: 900;
+        padding: 12px 14px;
+        border-bottom: 1px solid rgba(173,195,223,.18);
+      }
+      .ti-matcher-compare thead th:first-child {
+        width: 18%;
+        color: #eef4ff;
+      }
+      .ti-matcher-compare thead th:nth-child(2),
+      .ti-matcher-compare thead th:nth-child(3) {
+        width: 41%;
+      }
+      .ti-matcher-compare th,
+      .ti-matcher-compare td {
+        padding: 14px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid rgba(173,195,223,.14);
+      }
+      .ti-matcher-compare .ti-factor,
+      .ti-matcher-compare .ti-bad,
+      .ti-matcher-compare .ti-good {
+        padding: 0;
+        border-radius: 0;
+        min-height: 0;
+      }
+      .ti-matcher-compare .ti-factor {
+        color: #eef4ff;
+        font-weight: 900;
+        font-size: 15px;
+      }
+      .ti-matcher-compare .ti-bad {
+        color: #f2f7ff;
+      }
+      .ti-matcher-compare .ti-good {
+        color: #ffffff;
+      }
+      .ti-matcher-compare .ti-emoji {
+        font-size: 18px;
+        line-height: 1;
+        margin-right: 8px;
+        vertical-align: -2px;
+      }
+      .ti-matcher-compare .ti-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 900;
+        vertical-align: middle;
+      }
+      .ti-matcher-compare .ti-mark.bad {
+        background: #f25f5c;
+        color: #fff;
+      }
+      .ti-matcher-compare .ti-mark.good {
+        background: #65c887;
+        color: #fff;
+      }
+      .ti-matcher-compare .ti-copy {
+        display: inline;
+      }
+      .ti-matcher-compare .ti-th-bad {
+        color: #ffb7b5;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+      }
+      .ti-matcher-compare .ti-th-good {
+        color: #bfeccf;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+      }
+      .ti-matcher-bottom-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: .18em;
+        color: #eef4ff;
+        text-transform: uppercase;
+      }
+      .ti-matcher-bottom-brand::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #f26522;
+        display: inline-block;
+      }
+      .ti-matcher-bottom-brand strong {
+        letter-spacing: .12em;
+      }
+      .ti-matcher-bottom-brand span {
+        color: #adc3df;
+      }
+      @media (max-width: 900px) {
+        .ti-matcher-preview-grid {
+          display: block;
+        }
+      }
+      @media (max-width: 767px) {
+        .ti-matcher-preview {
+          padding: 16px 14px;
+        }
+        .ti-matcher-compare table {
+          min-width: 560px;
+          font-size: 13px;
+        }
+        .ti-matcher-compare th,
+        .ti-matcher-compare td {
+          padding: 12px;
+        }
+      }
+    </style>
+    <section class="ti-matcher-preview" aria-label="Commercial Truck Insurance Matcher preview">
+      <h2 class="ti-matcher-preview-title">Free Tool for <span class="accent">Truck Companies Shopping Insurance</span></h2>
+      <div class="ti-matcher-compare">
+        <table aria-label="Comparison of online insurance guides versus the Commercial Truck Insurance Matcher">
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th class="ti-th-bad">Cons</th>
+              <th class="ti-th-good">Our Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="ti-factor"><span class="ti-emoji">📋</span>Results</div></td>
+              <td><div class="ti-bad"><span class="ti-mark bad">x</span><span class="ti-copy">Guides often send you to the same insurance companies.</span></div></td>
+              <td><div class="ti-good"><span class="ti-mark good">✓</span><span class="ti-copy">We match by state, safety profile, cargo type, and other trucking details.</span></div></td>
+            </tr>
+            <tr>
+              <td><div class="ti-factor"><span class="ti-emoji">📞</span>Time</div></td>
+              <td><div class="ti-bad"><span class="ti-mark bad">x</span><span class="ti-copy">Doing it yourself can take lots of calls and conversations.</span></div></td>
+              <td><div class="ti-good"><span class="ti-mark good">✓</span><span class="ti-copy">Our tool gives you a shortlist instantly.</span></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ti-matcher-bottom-brand"><strong>TruckInfo</strong><span>.net</span></div>
+    </section>
+  </div>
+</div>
+
+</div><!-- /.ti-research-wrap -->
