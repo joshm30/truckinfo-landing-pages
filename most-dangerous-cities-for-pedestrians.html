@@ -21,11 +21,11 @@
     </div>
   </div>
 <div class="rich-text-block-15">
-  <p>Despite the health benefits of walking, only 2.4% of U.S. workers walk to work.</p>
+  <p>Despite the health benefits of walking, only <a href="https://data.census.gov/table/ACSST1Y2023.S0801" target="_blank">2.4% of U.S. workers walk to work</a>.</p>
   <p>‍</p>
-  <p>As the federal government tries to <a href="https://www.cdc.gov/physicalactivity/walking/call-to-action/index.htm" target="_blank">promote walking and walkable cities</a>, one major obstacle they have identified is <a href="https://www.transportation.gov/mission/health/Encourage-and-Promote-Safe-Bicycling-and-Walking" target="_blank">road safety</a>. Unfortunately, that concern remains valid. Pedestrian deaths peaked at 7,593 in 2022 and the latest annual FARS file still shows 7,080 pedestrian fatalities in 2024.</p>
+  <p>As the federal government tries to <a href="https://www.cdc.gov/physicalactivity/walking/call-to-action/" target="_blank">promote walking and walkable cities</a>, one major obstacle they have identified is <a href="https://www.transportation.gov/mission/health/Encourage-and-Promote-Safe-Bicycling-and-Walking" target="_blank">road safety</a>. Unfortunately, that concern remains valid. Pedestrian deaths peaked at 7,593 in 2022 and the latest annual FARS file still shows 7,080 pedestrian fatalities in 2024.</p>
   <p>‍</p>
-  <p>To see where pedestrians are most at risk, researchers at TruckInfo.net analyzed data from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a> and 2023 <a href="https://api.census.gov/data/2023/acs/acs1" target="_blank">U.S. Census Bureau ACS 1-year estimates</a> and found the following trends.</p>
+  <p>To see where pedestrians are most at risk, researchers at TruckInfo.net analyzed data from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a> and 2023 <a href="https://data.census.gov/table/ACSST1Y2023.S0801" target="_blank">U.S. Census Bureau ACS 1-year estimates</a> and found the following trends.</p>
   <p>‍</p>
   <h2>#1: Pedestrian fatalities are still 72% higher than they were in 2009</h2>
   <p>The current pedestrian safety problem is not a short-term blip. NHTSA's latest annual file shows 7,080 pedestrian deaths in 2024, up 72.3% from 4,109 in 2009.</p>
@@ -412,25 +412,24 @@
         font-family: Lato, Arial, sans-serif;
       }
       .ti-resource-box-head {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 12px;
-        margin: 0 0 12px;
+        margin: 0 0 14px;
       }
       .ti-resource-box-title {
-        margin: 0;
-        font-size: clamp(24px, 3.6vw, 34px);
-        line-height: 1.08;
-        font-weight: 900;
-        letter-spacing: -.03em;
+        margin: 0 !important;
+        text-align: left !important;
+        font-size: clamp(24px, 3.6vw, 34px) !important;
+        line-height: 1.08 !important;
+        font-weight: 900 !important;
+        letter-spacing: -.03em !important;
+        color: #eef3fb !important;
       }
-      .ti-resource-box-title a {
-        color: inherit;
-        text-decoration: none;
+      .ti-resource-box-title a,
+      .ti-resource-box-title a:hover {
+        color: #eef3fb !important;
+        text-decoration: none !important;
       }
       .ti-resource-box-title .accent {
-        color: #f47b3a;
+        color: #f47b3a !important;
       }
       .ti-resource-box-sub {
         margin: 0 0 18px;
@@ -476,6 +475,7 @@
         color: #eef3fb;
         text-transform: uppercase;
         white-space: nowrap;
+        margin-top: 14px;
       }
       .ti-resource-box-brand::before {
         content: "";
@@ -518,7 +518,6 @@
     <div class="ti-resource-box">
       <div class="ti-resource-box-head">
         <p class="ti-resource-box-title"><a href="/dot-recommender">Free Tool for <span class="accent">Truck Companies Shopping Insurance</span></a></p>
-        <div class="ti-resource-box-brand"><strong>TruckInfo</strong><span>.net</span></div>
       </div>
       <div class="ti-resource-box-grid">
         <div class="ti-resource-box-item">
@@ -534,6 +533,7 @@
           <p>Helps you skip carriers that may not write your risk.</p>
         </div>
       </div>
+      <div class="ti-resource-box-brand"><strong>TruckInfo</strong><span>.net</span></div>
     </div>
   </div>
   <p>‍</p>
@@ -862,7 +862,7 @@
 
   <p>‍</p>
   <h2>Methodology</h2>
-  <p>Fatality counts were sourced from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a>. This refresh used the 2015-2024 annual files, with the 2024 file representing the latest annual release available from NHTSA as of April 2026. Population and walk-to-work data were sourced from the <a href="https://api.census.gov/data/2023/acs/acs1" target="_blank">U.S. Census Bureau's 2023 ACS 1-year estimates</a>. Large cities were defined as cities with populations over 350,000.</p>
+  <p>Fatality counts were sourced from the <a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">National Highway Traffic Safety Administration's Fatality Analysis Reporting System</a>. This refresh used the 2015-2024 annual files, with the 2024 file representing the latest annual release available from NHTSA as of April 2026. Population and walk-to-work data were sourced from the <a href="https://data.census.gov/table/ACSST1Y2023.S0801" target="_blank">U.S. Census Bureau's 2023 ACS 1-year estimates</a>. Large cities were defined as cities with populations over 350,000.</p>
   <p>‍</p>
   <div class="w-embed">
     <style>
